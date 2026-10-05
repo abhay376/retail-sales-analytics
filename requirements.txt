@@ -1,1 +1,8 @@
-pandas`nnumpy`nmatplotlib`nseaborn`nscikit-learn`nopenpyxl`nplotly`nstreamlit
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+openpyxl
+plotly
+streamlit

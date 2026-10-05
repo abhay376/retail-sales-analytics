@@ -68,6 +68,13 @@ retail_sales_analytics/
 
 ## 🚀 Execution & Usage Instructions
 
+### GitHub Codespaces Environment Setup
+The dev container installs project dependencies automatically after it is created. To launch the dashboard in Codespaces, run:
+```bash
+streamlit run app.py --server.address 0.0.0.0
+```
+Codespaces forwards port `8501` so you can open the dashboard in your browser.
+
 ### 1. Launch Interactive Web Dashboard
 Run the web application to view live revenue trends, run interactive SQL queries, and execute demand forecasts in your browser:
 ```bash
@@ -91,5 +98,7 @@ g++ -O3 -std=c++17 cpp_engine/fast_retail_analyzer.cpp -o cpp_engine/retail_anal
 
 ## 📊 Key Features & Web Dashboard Capabilities
 - **Interactive Visual BI**: Real-time KPI metric filtering by date range, store location, and product category using Plotly.
+- **Theme-Aware Interface**: Dashboard cards, controls, and charts follow Streamlit's active Light or Dark theme.
+- **Custom Data Uploads**: Upload CSV or `.xlsx` retail data to use it across dashboard filters, charts, forecasts, SQL queries, and exports. Required columns: `Date`, `Customer_ID`, `Product_Category`, `Quantity`, `Total_Amount`, `Payment_Method`, and `Store_Location`.
 - **SQL Analytics Sandbox**: Execute custom SQL queries (`GROUP BY`, `HAVING`, CTEs, Window Functions) directly from the web browser.
 - **Machine Learning Demand Forecasting**: Interactive time-series sales prediction powered by Scikit-learn Random Forest Regressor.
