@@ -1,15 +1,14 @@
-# Retail Sales Analytics Dashboard with Basic Demand Forecasting
+# Retail Sales Analytics & Demand Forecasting System
 
-A complete end-to-end data analytics, machine learning forecasting, and database project matching the tech stack listed on your resume.
+A comprehensive end-to-end data engineering, visual analytics, and machine learning forecasting pipeline designed for retail enterprise sales transactions.
 
 ---
 
-## 🛠️ Tech Stack Included
-- **Programming & Analysis**: Python 3.13, Pandas, NumPy, C++17 (High-Performance Module)
-- **Data Visualization**: Matplotlib, Seaborn, Power BI
-- **Database & SQL**: PostgreSQL, SQLite
-- **Machine Learning**: Scikit-Learn (Random Forest Regressor, Time-Series Lag Features)
-- **Reporting & Tools**: Excel (`openpyxl`), Jupyter Notebook, Power BI Desktop
+## 🛠️ Technology Stack
+- **Data Engineering & Analytics**: Python 3.13, Pandas, NumPy, C++17
+- **Database & Querying**: PostgreSQL, SQLite
+- **Machine Learning & Forecasting**: Scikit-Learn (Random Forest Regressor, Time-Series Lag Engineering)
+- **Data Visualization & Business Intelligence**: Matplotlib, Seaborn, Power BI Desktop, Excel
 
 ---
 
@@ -18,72 +17,65 @@ A complete end-to-end data analytics, machine learning forecasting, and database
 ```text
 retail_sales_analytics/
 │
-├── data/                                 # Datasets & Database Files
-│   ├── retail_sales_raw.csv              # Synthetic raw transactions dataset (3,000 records)
-│   ├── retail_sales_cleaned.csv          # Cleaned dataset with temporal features
-│   ├── retail_database.db                # SQLite database populated with transaction table
-│   └── Retail_Analytics_Summary.xlsx     # Multi-tab Excel summary workbook for Power BI
+├── data/                                 # Datasets & Database Engine
+│   ├── retail_sales_raw.csv              # Primary raw transactions dataset (3,000 records)
+│   ├── retail_sales_cleaned.csv          # Processed dataset with engineered temporal features
+│   ├── retail_database.db                # SQLite database storing transactional relational tables
+│   └── Retail_Analytics_Summary.xlsx     # Multi-tab aggregated summary workbook for BI integration
 │
-├── cpp_engine/                           # C++ High-Performance Data Engine
-│   └── fast_retail_analyzer.cpp          # Fast C++ CSV parser & revenue metrics aggregator
+├── cpp_engine/                           # High-Performance C++ Ingestion Module
+│   └── fast_retail_analyzer.cpp          # Fast C++ file stream parser & revenue aggregator
 │
-├── sql/                                  # SQL Database Scripts
-│   ├── 01_schema_and_tables.sql          # Table DDL & index creation script
-│   └── 02_analytics_queries.sql          # PostgreSQL/SQLite aggregation, CTEs & window queries
+├── sql/                                  # Database Schemas & Analytical SQL Scripts
+│   ├── 01_schema_and_tables.sql          # DDL table creation and index definitions
+│   └── 02_analytics_queries.sql          # Structured SQL queries (Aggregations, CTEs, Window Functions)
 │
-├── notebooks/                            # Jupyter Notebooks
-│   └── retail_sales_analytics.ipynb      # Step-by-step EDA, SQL execution, & ML forecasting
+├── notebooks/                            # Exploratory Notebooks
+│   └── retail_sales_analytics.ipynb      # End-to-end data cleaning, EDA, & ML demand forecasting
 │
-├── scripts/                              # Automated Python Pipelines
-│   ├── generate_data.py                  # Generates retail transactions dataset & SQLite DB
-│   └── run_pipeline.py                   # Executes data cleaning, EDA plots & ML forecasting model
+├── scripts/                              # Automated Pipeline Execution
+│   ├── generate_data.py                  # Data generation & SQLite database population
+│   └── run_pipeline.py                   # Automated ETL, visualization plotting, & ML model execution
 │
-├── visualizations/                       # Generated High-Res Visual Analytics
-│   ├── 01_monthly_sales_trend.png        # Line plot of monthly revenue trends
-│   ├── 02_category_revenue.png           # Bar chart of sales by product category
-│   ├── 03_payment_distribution.png       # Pie chart of payment methods
-│   └── 04_demand_forecasting_results.png # Actual vs Predicted daily sales graph
+├── visualizations/                       # Generated Analytical Artifacts
+│   ├── 01_monthly_sales_trend.png        # Monthly sales revenue trend line chart
+│   ├── 02_category_revenue.png           # Category performance revenue bar chart
+│   ├── 03_payment_distribution.png       # Payment method market share pie chart
+│   └── 04_demand_forecasting_results.png # Time-series actual vs predicted sales plot
 │
-├── power_bi/                             # Power BI Setup & DAX Guide
-│   └── PowerBI_Dashboard_Guide.md        # Step-by-step canvas layout & DAX measure formulas
+├── power_bi/                             # Business Intelligence Dashboard Documentation
+│   └── PowerBI_Dashboard_Guide.md        # Data model architecture & DAX measure definitions
 │
-├── interview_prep/                       # Interview Preparation Material
-│   └── INTERVIEW_CHEAT_SHEET.md          # 30-sec pitch, QA breakdown, C++ explanation & SQL review
-│
-├── requirements.txt                      # Python dependencies list
-└── README.md                             # Project Documentation
+├── requirements.txt                      # Environment dependencies specification
+└── README.md                             # Repository Overview
 ```
 
 ---
 
-## 🚀 How to Run the Project
+## 🚀 Pipeline Execution Instructions
 
-### 1. Run Python Automated Pipeline
-Run the Python script to generate visualizations, cleaned CSV files, and Excel summaries:
+### 1. Execute Data Cleaning & ML Pipeline
+Run the automated ETL script to transform transaction data, build lag features, train the forecasting model, and export visual charts:
 ```bash
-.venv\Scripts\python scripts/run_pipeline.py
+python scripts/run_pipeline.py
 ```
 
-### 2. Run C++ High-Performance Data Analyzer
-If you have `g++` installed, compile and run the native C++ engine:
+### 2. High-Performance C++ Analytics Module
+Compile and execute the native C++ stream processor for ultra-fast metric aggregations:
 ```bash
 g++ -O3 -std=c++17 cpp_engine/fast_retail_analyzer.cpp -o cpp_engine/retail_analyzer
 ./cpp_engine/retail_analyzer
 ```
 
-### 3. Open Jupyter Notebook
-To view or present the interactive notebook step-by-step:
+### 3. Launch Jupyter Analytics Notebook
+To inspect the interactive data exploration and machine learning workflow:
 ```bash
-.venv\Scripts\jupyter notebook notebooks/retail_sales_analytics.ipynb
+jupyter notebook notebooks/retail_sales_analytics.ipynb
 ```
 
 ---
 
-## 🎯 Interview Quick Reference
-
-For your interview in 2 days, open **`interview_prep/INTERVIEW_CHEAT_SHEET.md`**. It contains:
-1. Your 30-Second Resume Elevator Pitch.
-2. Detailed answers for every bullet point on your resume.
-3. PostgreSQL queries (aggregations, `GROUP BY`, `HAVING`, window functions).
-4. How to confidently explain using **C++** in your data analytics project.
-5. DAX measures and Power BI setup steps.
+## 📊 Key Findings & System Capabilities
+- **Revenue Analytics**: Automated category breakdown, regional store performance, and payment distribution metrics.
+- **Advanced SQL Queries**: Relational schema supporting aggregations (`GROUP BY`, `HAVING`), customer segmentation CTEs, and product ranking window functions (`RANK() OVER(...)`).
+- **Predictive Demand Forecasting**: Time-series lag feature engineering (`Sales_Lag_1`, `Sales_Lag_7`, `Rolling_Avg_7`) coupled with Random Forest Regression to predict future sales revenue trends.
