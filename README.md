@@ -1,10 +1,21 @@
 # Retail Sales Analytics & Demand Forecasting System
 
-A comprehensive end-to-end data engineering, visual analytics, and machine learning forecasting pipeline designed for retail enterprise sales transactions.
+A comprehensive end-to-end data engineering, visual analytics, and machine learning forecasting web application designed for retail enterprise sales transactions.
+
+---
+
+## ⚡ Direct Quick Launch Links
+
+- 🌐 **[Launch Interactive GitHub Codespaces Workspace](https://github.com/codespaces/new?repo=abhay376/retail-sales-analytics)**
+- 🖥️ **Local 1-Click Browser Launch**: Double-click `Click_To_Launch_Dashboard.bat` in your project folder or run:
+  ```bash
+  streamlit run app.py
+  ```
 
 ---
 
 ## 🛠️ Technology Stack
+- **Web Application & UI**: Streamlit, Plotly Express
 - **Data Engineering & Analytics**: Python 3.13, Pandas, NumPy, C++17
 - **Database & Querying**: PostgreSQL, SQLite
 - **Machine Learning & Forecasting**: Scikit-Learn (Random Forest Regressor, Time-Series Lag Engineering)
@@ -16,6 +27,9 @@ A comprehensive end-to-end data engineering, visual analytics, and machine learn
 
 ```text
 retail_sales_analytics/
+│
+├── app.py                                # Interactive Streamlit Web Dashboard Application
+├── Click_To_Launch_Dashboard.bat         # 1-Click Windows Browser Dashboard Launcher
 │
 ├── data/                                 # Datasets & Database Engine
 │   ├── retail_sales_raw.csv              # Primary raw transactions dataset (3,000 records)
@@ -52,30 +66,30 @@ retail_sales_analytics/
 
 ---
 
-## 🚀 Pipeline Execution Instructions
+## 🚀 Execution & Usage Instructions
 
-### 1. Execute Data Cleaning & ML Pipeline
-Run the automated ETL script to transform transaction data, build lag features, train the forecasting model, and export visual charts:
+### 1. Launch Interactive Web Dashboard
+Run the web application to view live revenue trends, run interactive SQL queries, and execute demand forecasts in your browser:
+```bash
+streamlit run app.py
+```
+
+### 2. Execute Data Pipeline Script
+Run the automated ETL script to transform transaction data and generate visualization plots:
 ```bash
 python scripts/run_pipeline.py
 ```
 
-### 2. High-Performance C++ Analytics Module
+### 3. High-Performance C++ Analytics Module
 Compile and execute the native C++ stream processor for ultra-fast metric aggregations:
 ```bash
 g++ -O3 -std=c++17 cpp_engine/fast_retail_analyzer.cpp -o cpp_engine/retail_analyzer
 ./cpp_engine/retail_analyzer
 ```
 
-### 3. Launch Jupyter Analytics Notebook
-To inspect the interactive data exploration and machine learning workflow:
-```bash
-jupyter notebook notebooks/retail_sales_analytics.ipynb
-```
-
 ---
 
-## 📊 Key Findings & System Capabilities
-- **Revenue Analytics**: Automated category breakdown, regional store performance, and payment distribution metrics.
-- **Advanced SQL Queries**: Relational schema supporting aggregations (`GROUP BY`, `HAVING`), customer segmentation CTEs, and product ranking window functions (`RANK() OVER(...)`).
-- **Predictive Demand Forecasting**: Time-series lag feature engineering (`Sales_Lag_1`, `Sales_Lag_7`, `Rolling_Avg_7`) coupled with Random Forest Regression to predict future sales revenue trends.
+## 📊 Key Features & Web Dashboard Capabilities
+- **Interactive Visual BI**: Real-time KPI metric filtering by date range, store location, and product category using Plotly.
+- **SQL Analytics Sandbox**: Execute custom SQL queries (`GROUP BY`, `HAVING`, CTEs, Window Functions) directly from the web browser.
+- **Machine Learning Demand Forecasting**: Interactive time-series sales prediction powered by Scikit-learn Random Forest Regressor.
